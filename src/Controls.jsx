@@ -1,0 +1,26 @@
+// Controls.tsx
+// import React from 'react';
+import { Box, Button } from '@mui/material';
+
+const Controls = ({ onNext, onShuffle }) => {
+  return (
+    <Box display="flex" justifyContent="center" gap={2} mt={2}>
+      <Button
+        variant="outlined"
+        color="secondary"
+        onClick={onShuffle}
+      >
+        Shuffle
+      </Button>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={onNext}
+      >
+        Next
+      </Button>
+    </Box>
+  );
+};
+
+export default Controls;

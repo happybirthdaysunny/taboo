@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #5e17eb 0%, black 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
