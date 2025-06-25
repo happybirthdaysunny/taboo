@@ -8,6 +8,7 @@ import ScoreBoard from './ScoreBoard';
 import Controls from "./Controls";
 import { PrimaryButton } from "./PrimaryButton";
 import { Marquee } from "./Marquee";
+import { pxToRemConverter } from './utils/numericHelpers';
 // import { pxToRemConverter } from './utils/numericHelpers';
 
 function App() {
@@ -76,9 +77,27 @@ const handleShuffle = () => {
     alignItems: 'center'
      }}>
       <Marquee />
-      <Box >
-         <Box component="img" src={tabooLogo} alt="Logo" sx={{ height: 150 }} />
-
+      <Box sx={{ marginTop: pxToRemConverter(32)}}>
+<Box
+  sx={{
+    display: 'flex',
+    // justifyContent: hasStarted && currentIndex < cards.length ? 'flex-start' : 'center',
+    justifyContent: 'center',
+    width: '100%',
+    marginTop: hasStarted && currentIndex < cards.length ? pxToRemConverter(0) : pxToRemConverter(100),
+    marginBottom: hasStarted && currentIndex < cards.length ? 2 : 4,
+  }}
+>
+  <Box
+    component="img"
+    src={tabooLogo}
+    alt="Logo"
+    sx={{
+      height: hasStarted && currentIndex < cards.length ? 140 : 300,
+      transition: 'all 0.3s ease',
+    }}
+  />
+</Box>
        {!hasStarted ? (
     <Box textAlign="center" mt={4}>
       <Typography variant="h4" gutterBottom>
