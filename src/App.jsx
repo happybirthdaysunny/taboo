@@ -1,11 +1,12 @@
 import tabooLogo from '/taboo.svg'
 import './App.css'
-import { Box, Typography, Button } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { useState, useEffect } from 'react';
 import { cardBank } from "./constants";
 import { GameCard } from './GameCard';
 import ScoreBoard from './ScoreBoard';
 import Controls from "./Controls";
+import { PrimaryButton } from "./PrimaryButton";
 
 function App() {
   const [cards, setCards] = useState(cardBank);
@@ -77,22 +78,26 @@ const handleShuffle = () => {
       <Typography variant="body1" gutterBottom>
         Try to get through all 32 cards before time runs out.
       </Typography>
-      <Button
+      <PrimaryButton
         variant="contained"
         onClick={handleStart}
         sx={{ mt: 2 }}
-      >
-        Play
-      </Button>
+        label={"Play"}
+      />
     </Box>
   ) : currentIndex < cards.length ? (
     <Box>
-      <ScoreBoard timer={timer} score={score} />
+      <ScoreBoard timer={timer} score={score} index={currentIndex + 1} />
 
       {cards[currentIndex] && <GameCard card={cards[currentIndex]} />}
-      <Typography variant="subtitle1" sx={{ mt: 2, mb: 1 }}>
+      {
+        /*
+              <Typography variant="subtitle1" sx={{ mt: 2, mb: 1 }}>
         Card {currentIndex + 1} of {cards.length}
       </Typography>
+
+        */
+      }
       <Controls onNext={handleNext} onShuffle={handleShuffle} />
 
     </Box>
@@ -100,9 +105,7 @@ const handleShuffle = () => {
     <Box textAlign="center" mt={4}>
       <Typography variant="h4">🎉 Happy Birthday Sunny!</Typography>
       <Typography variant="h6">Your final score: {score}</Typography>
-      <Button variant="contained" onClick={handleShuffle} sx={{ mt: 2 }}>
-        Play Again
-      </Button>
+      <PrimaryButton variant="contained" onClick={handleShuffle} sx={{ mt: 2 }} label={"Play Again"} />
     </Box>
   )}
     </Box>

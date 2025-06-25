@@ -2,14 +2,18 @@
 // import React from 'react';
 import { Box, Typography } from '@mui/material';
 
-const ScoreBoard = ({ score, timer }) => {
+const ScoreBoard = ({ score, timer, index }) => {
   const timerColor = timer <= 10 ? 'error.main' : 'primary.main';
 
   return (
-    <Box sx={{  display: 'flex', justifyContent: 'space-around', marginBottom: "16px" }}>
+    <Box sx={{  display: 'flex', justifyContent: 'space-around' }}>
       <Box textAlign="center">
         <Typography variant="subtitle1">Score</Typography>
         <Typography variant="h4">{score}</Typography>
+      </Box>
+      <Box>
+         <Typography variant="subtitle1">Card</Typography>
+        <Typography variant="h4">{index}/32</Typography>
       </Box>
       <Box textAlign="center">
         <Typography variant="subtitle1">Time Left</Typography>

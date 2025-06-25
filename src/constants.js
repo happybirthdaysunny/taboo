@@ -140,7 +140,7 @@ export const cardBank = [
     difficulty: 3
   },
   {
-    guessWord: "",
+    guessWord: "Potato Masher",
     tabooWords: [],
     difficulty: 3
   },

@@ -1,4 +1,5 @@
 import { Card, CardContent, Typography, List, ListItem, Box } from '@mui/material';
+import { pxToRemConverter } from './utils/numericHelpers';
 
 const backgroundColors = {
   1: ["#ffa9f9", "#fff7ad"],
@@ -11,7 +12,7 @@ export const GameCard = ({ card }) => {
   const { guessWord, tabooWords, difficulty} = card;
 
   return (
-    <Card sx={{ width: "300px", height: "370px", borderRadius: "24px", background: `linear-gradient(180deg, ${backgroundColors[difficulty][0]}, ${backgroundColors[difficulty][1]})`, padding: "32px 24px", display: "flex", flexDirection: "column" }}>
+    <Card sx={{ width: "300px", height: "370px", borderRadius: "24px", background: `linear-gradient(180deg, ${backgroundColors[difficulty][0]}, ${backgroundColors[difficulty][1]})`, padding: "32px 24px", display: "flex", flexDirection: "column", margin: `${pxToRemConverter(32)} 0`  }}>
       <CardContent sx={{ display: "flex", flexDirection: "column", flexGrow: 1, padding: 0}}>
         <Typography variant="h4" sx={{fontSize: "28px", fontFamily: "Archivo, sans-serif", fontWeight: 900, marginBottom: "24px", marginTop: "12px" }}>{guessWord.toUpperCase()}</Typography>
         <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "24px", backgroundColor: "#ffffff", height: "100%", padding: 0}}>

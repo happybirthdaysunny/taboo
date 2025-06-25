@@ -1,24 +1,21 @@
-// Controls.tsx
-// import React from 'react';
-import { Box, Button } from '@mui/material';
+import { Box } from '@mui/material';
+import { PrimaryButton } from "./PrimaryButton";
 
 const Controls = ({ onNext, onShuffle }) => {
   return (
     <Box display="flex" justifyContent="space-between" >
-      <Button
+      <PrimaryButton
         variant="outlined"
         color="secondary"
         onClick={onShuffle}
-      >
-        Shuffle
-      </Button>
-      <Button
+        label="Shuffle"
+      />
+      <PrimaryButton
         variant="contained"
         color="primary"
         onClick={onNext}
-      >
-        Next
-      </Button>
+        label="Next"
+      />
     </Box>
   );
 };

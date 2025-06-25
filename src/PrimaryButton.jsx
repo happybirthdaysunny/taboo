@@ -1,8 +1,7 @@
-import React from 'react';
-import { Button } from '@mui/material';
-import { pxToRemConverter } from '@helios-media-platform/advance-ui-kit/utils';
+import { Button as ButtonMUI } from '@mui/material';
+import { pxToRemConverter } from './utils/numericHelpers';
 
-const PrimaryButton = ({
+export const PrimaryButton = ({
   label,
   onClick,
   variant = 'outlined',
@@ -10,26 +9,25 @@ const PrimaryButton = ({
   sx = {},
 }) => {
   return (
-    <Button
+    <ButtonMUI
       variant={variant}
       color={color}
       onClick={onClick}
       sx={{
-        padding: `${pxToRemConverter(8)} ${pxToRemConverter(12)}`,
-        borderRadius: pxToRemConverter(8),
-        fontSize: pxToRemConverter(16),
+        padding: `${pxToRemConverter(18)} ${pxToRemConverter(32)}`,
+        borderRadius: pxToRemConverter(16),
+        fontSize: pxToRemConverter(18),
         fontWeight: 700,
         border: '1px solid #7300A8',
         backgroundColor: '#ffffff',
         width: 'fit-content',
         maxHeight: pxToRemConverter(32),
         minWidth: 0,
+        color: "#000",
         ...sx, // allow optional overrides
       }}
     >
       {label}
-    </Button>
+    </ButtonMUI>
   );
 };
-
-export default PrimaryButton;
