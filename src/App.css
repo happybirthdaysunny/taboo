@@ -4,26 +4,12 @@
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   background: radial-gradient(circle at center, #5e17eb 0%, black 100%);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Poppins, sans-serif";
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {

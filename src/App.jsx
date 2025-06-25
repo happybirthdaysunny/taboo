@@ -70,6 +70,7 @@ const handleShuffle = () => {
 
   return (
     <Box sx={{ color: "#ffffff", fontFamily: "Poppins, sans-serif",
+      minHeight: '100vh',
       display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
