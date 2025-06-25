@@ -3,7 +3,9 @@
 import { Box, Typography } from '@mui/material';
 
 const ScoreBoard = ({ score, timer, index }) => {
-  const timerColor = timer <= 10 ? 'error.main' : 'primary.main';
+  // const timerColor = timer <= 10 ? 'error.main' : 'primary.main';
+  const timerColor = timer <= 10 ? '#ff5757' : '#0cc0df';
+    // #ff5757 #0cc0df
 
   return (
     <Box sx={{  display: 'flex', justifyContent: 'space-around' }}>

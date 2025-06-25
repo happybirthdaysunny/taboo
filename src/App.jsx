@@ -130,9 +130,11 @@ const handleShuffle = () => {
 
     </Box>
   ) : (
-    <Box textAlign="center" mt={4}>
-      <Typography variant="h4">🎉 Happy Birthday Sunny!</Typography>
-      <Typography variant="h6">Your final score: {score}</Typography>
+    <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 1}} mt={4} >
+      <Typography variant="h4" sx={{ fontFamily: "Poppins, sans-serif"}}>🎉 Happy Birthday Sunny! 🎉</Typography>
+      <Box sx={{display: "flex", flexDirection: "row", gap: 2, alignItems: "center"}}>
+        <Typography variant="h6" sx={{ fontFamily: "Poppins, sans-serif"}}>{`Your final score:`}</Typography><Typography variant="h4" sx={{ fontFamily: "Archivo, sans-serif"}}>{score}</Typography>
+        </Box>
       <PrimaryButton variant="contained" onClick={handleShuffle} sx={{ mt: 2 }} label={"Play Again"} />
     </Box>
   )}
