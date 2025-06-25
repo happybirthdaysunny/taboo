@@ -7,6 +7,7 @@ import { GameCard } from './GameCard';
 import ScoreBoard from './ScoreBoard';
 import Controls from "./Controls";
 import { PrimaryButton } from "./PrimaryButton";
+import { Marquee } from "./Marquee";
 
 function App() {
   const [cards, setCards] = useState(cardBank);
@@ -68,15 +69,16 @@ const handleShuffle = () => {
 
   return (
     <Box sx={{padding: 16, color: "#ffffff", fontFamily: "Poppins, sans-serif" }}>
+      <Marquee />
       <Box component="img" src={tabooLogo} alt="Logo" sx={{ height: 150 }} />
 
        {!hasStarted ? (
     <Box textAlign="center" mt={4}>
       <Typography variant="h4" gutterBottom>
-        🎉 Welcome to Taboo: Sunny Edition!
+        Welcome
       </Typography>
       <Typography variant="body1" gutterBottom>
-        Try to get through all 32 cards before time runs out.
+        Get through all 32 cards before time runs out!
       </Typography>
       <PrimaryButton
         variant="contained"
