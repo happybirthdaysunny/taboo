@@ -100,10 +100,10 @@ const handleShuffle = () => {
 </Box>
        {!hasStarted ? (
     <Box textAlign="center" mt={4}>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom sx={{ fontFamily: "Poppins, sans-serif"}}>
         Welcome
       </Typography>
-      <Typography variant="body1" gutterBottom>
+      <Typography variant="body1" gutterBottom sx={{ fontFamily: "Poppins, sans-serif"}}>
         Get through all 32 cards before time runs out!
       </Typography>
       <PrimaryButton
