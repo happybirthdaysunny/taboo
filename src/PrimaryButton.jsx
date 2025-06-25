@@ -7,6 +7,7 @@ export const PrimaryButton = ({
   variant = 'outlined',
   color = 'primary',
   sx = {},
+  buttonColor = "#0cc0df"
 }) => {
   return (
     <ButtonMUI
@@ -15,15 +16,17 @@ export const PrimaryButton = ({
       onClick={onClick}
       sx={{
         padding: `${pxToRemConverter(18)} ${pxToRemConverter(32)}`,
-        borderRadius: pxToRemConverter(16),
+        borderRadius: pxToRemConverter(24),
         fontSize: pxToRemConverter(18),
         fontWeight: 700,
-        border: '1px solid #7300A8',
-        backgroundColor: '#ffffff',
+        border: '1px solid #fff',
+        borderColor: variant === "outlined" ? "#fff" : buttonColor,
+        backgroundColor: variant === "outlined" ? "transparent" : buttonColor,
         width: 'fit-content',
         maxHeight: pxToRemConverter(32),
         minWidth: 0,
-        color: "#000",
+        color: variant === "outlined" ? "#fff" : '#5e17eb',
+        fontFamily: "Archivo, sans-serif",
         ...sx, // allow optional overrides
       }}
     >

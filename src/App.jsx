@@ -81,10 +81,9 @@ const handleShuffle = () => {
 <Box
   sx={{
     display: 'flex',
-    // justifyContent: hasStarted && currentIndex < cards.length ? 'flex-start' : 'center',
     justifyContent: 'center',
     width: '100%',
-    marginTop: hasStarted && currentIndex < cards.length ? pxToRemConverter(0) : pxToRemConverter(100),
+    marginTop: hasStarted && currentIndex < cards.length ? pxToRemConverter(0) : pxToRemConverter(200),
     marginBottom: hasStarted && currentIndex < cards.length ? 2 : 4,
   }}
 >
@@ -93,15 +92,16 @@ const handleShuffle = () => {
     src={tabooLogo}
     alt="Logo"
     sx={{
-      height: hasStarted && currentIndex < cards.length ? 140 : 300,
+      height: hasStarted && currentIndex < cards.length ? 140 : 160,
       transition: 'all 0.3s ease',
+      marginBottom: pxToRemConverter(16)
     }}
   />
 </Box>
        {!hasStarted ? (
-    <Box textAlign="center" mt={4}>
-      <Typography variant="h4" gutterBottom sx={{ fontFamily: "Poppins, sans-serif"}}>
-        Welcome
+    <Box textAlign="center" mt={5}>
+      <Typography variant="h4" gutterBottom sx={{ fontFamily: "Archivo, sans-serif"}}>
+        WELCOME
       </Typography>
       <Typography variant="body1" gutterBottom sx={{ fontFamily: "Poppins, sans-serif"}}>
         Get through all 32 cards before time runs out!
@@ -111,6 +111,7 @@ const handleShuffle = () => {
         onClick={handleStart}
         sx={{ mt: 2 }}
         label={"Play"}
+        buttonColor={"#fff7ad"}
       />
     </Box>
   ) : currentIndex < cards.length ? (
@@ -135,7 +136,7 @@ const handleShuffle = () => {
       <Box sx={{display: "flex", flexDirection: "row", gap: 2, alignItems: "center"}}>
         <Typography variant="h6" sx={{ fontFamily: "Poppins, sans-serif"}}>{`Your final score:`}</Typography><Typography variant="h4" sx={{ fontFamily: "Archivo, sans-serif"}}>{score}</Typography>
         </Box>
-      <PrimaryButton variant="contained" onClick={handleShuffle} sx={{ mt: 2 }} label={"Play Again"} />
+      <PrimaryButton variant="contained" onClick={handleShuffle} sx={{ mt: 2 }} label={"Play Again"} buttonColor={"#fff7ad"} />
     </Box>
   )}
 
