@@ -46,7 +46,7 @@ export const cardBank = [
   },
     {
     guessWord: "Chicken Noodle Soup",
-    tabooWords: ["Comfort", "Cold", "Classic", "Campbell's"], // TO DO
+    tabooWords: ["Comfort", "Cold", "Broth", "Campbell's", "Spoon"],
     difficulty: 1
   },
   {
@@ -61,7 +61,7 @@ export const cardBank = [
   },
   {
     guessWord: "Birthday",
-    tabooWords: ["Cake", "Party", "Age", "Candles", "Present"], // born? gift?
+    tabooWords: ["Cake", "Party", "Age", "Candles", "Born"],
     difficulty: 1
   },
   {
@@ -71,12 +71,12 @@ export const cardBank = [
   },
   {
     guessWord: "Cowboy",
-    tabooWords: ["Western", "Boots", "Hat", "Horse", "Rodeo"], // yeehaw?
+    tabooWords: ["Western", "Boots", "Hat", "Horse", "Yeehaw"],
     difficulty: 1
   },
     {
     guessWord: "Ski Trip", // maybe something adjacent?
-    tabooWords: ["Slopes", "Chalet", "Gear", "Lift", "Lodge"], // ??
+    tabooWords: ["Slopes", "Chalet", "Lift", "Lodge"], // mountain, snow, einter,
     difficulty: 1
   },
   {
@@ -91,7 +91,7 @@ export const cardBank = [
   },
   {
     guessWord: "Cheesecake",
-    tabooWords: ["Dessert"], // to do
+    tabooWords: ["Dessert", "Cream", "Crust", "Bake", "Factory"],
     difficulty: 1
   },
   {
@@ -101,7 +101,7 @@ export const cardBank = [
   },
   {
     guessWord: "Sweet Potato",
-    tabooWords: ["Root", "Fries"], // to do
+    tabooWords: ["Root", "Fries", "Orange", "Thanksgiving", "Mash"],
     difficulty: 1
   },
   {
@@ -111,32 +111,32 @@ export const cardBank = [
   },
   {
     guessWord: "Bowling",
-    tabooWords: [], // to do
+    tabooWords: ["Alley", "Strike", "Ball", "Pins", "Gutter"],
     difficulty: 1
   },
   {
     guessWord: "Livid",
-    tabooWords: [], // to do
+    tabooWords: ["Angry", "Furious", "Rage", "Temper", "Mad"],
     difficulty: 2
   },
   {
     guessWord: "Appa", // to do
-    tabooWords: [],
+    tabooWords: ["Bison", "Flying", "Avatar", "Aang", "Sky"],
     difficulty: 2
   },
   {
-    guessWord: "Noggin", // ?? not sure
-    tabooWords: [],
+    guessWord: "Noggin",
+    tabooWords: ["Head", "Brain", "Skull", "Think", "Cranium"],
     difficulty: 2
   },
   {
     guessWord: "Diet Coke", //
-    tabooWords: [],
+    tabooWords: ["Soda", "Cola", "Zero", "Sweetener", "Drink"],
     difficulty: 3
   },
     {
     guessWord: "Hike",
-    tabooWords: [],
+    tabooWords: ["Trail", "Walk", "Nature", "Climb", "Boots"], // hitch?
     difficulty: 3
   },
   {
