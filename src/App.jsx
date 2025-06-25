@@ -13,6 +13,7 @@ function App() {
   const [timer, setTimer] = useState(60);
   const [score, setScore] = useState(0);
   const [isRunning, setIsRunning] = useState(true);
+  const [hasStarted, setHasStarted] = useState(false);
 
   useEffect(() => {
   if (!isRunning) return;
@@ -29,6 +30,10 @@ function App() {
 
   return () => clearInterval(interval);
 }, [isRunning]);
+
+const handleStart = () => {
+  setHasStarted(true);
+};
 
 const handleNext = () => {
   if (timer > 0) {
@@ -63,32 +68,43 @@ const handleShuffle = () => {
   return (
     <Box sx={{padding: 16, color: "#ffffff", fontFamily: "Poppins, sans-serif" }}>
       <Box component="img" src={tabooLogo} alt="Logo" sx={{ height: 150 }} />
-      <Box>32 words in honour of Sunny's 32nd birthday!</Box>
-      {
-        currentIndex < cards.length && (
-          <Box>
-                <ScoreBoard timer={timer} score={score} />
-                {/*
-        <GameCard card={cards[currentIndex]} />*/}
-        {cards[currentIndex] && <GameCard card={cards[currentIndex]} />}
-                <Typography variant="subtitle1" sx={{ mt: 2, mb: 1 }}>
+
+       {!hasStarted ? (
+    <Box textAlign="center" mt={4}>
+      <Typography variant="h4" gutterBottom>
+        🎉 Welcome to Taboo: Sunny Edition!
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+        Try to get through all 32 cards before time runs out.
+      </Typography>
+      <Button
+        variant="contained"
+        onClick={handleStart}
+        sx={{ mt: 2 }}
+      >
+        Play
+      </Button>
+    </Box>
+  ) : currentIndex < cards.length ? (
+    <Box>
+      <ScoreBoard timer={timer} score={score} />
+
+      {cards[currentIndex] && <GameCard card={cards[currentIndex]} />}
+      <Typography variant="subtitle1" sx={{ mt: 2, mb: 1 }}>
         Card {currentIndex + 1} of {cards.length}
       </Typography>
-        <Controls onNext={handleNext} onShuffle={handleShuffle} />
-      </Box>
-        )
-      }
-      {
-        currentIndex >= cards.length && (
-           <Box textAlign="center" mt={4}>
+      <Controls onNext={handleNext} onShuffle={handleShuffle} />
+
+    </Box>
+  ) : (
+    <Box textAlign="center" mt={4}>
       <Typography variant="h4">🎉 Happy Birthday Sunny!</Typography>
       <Typography variant="h6">Your final score: {score}</Typography>
       <Button variant="contained" onClick={handleShuffle} sx={{ mt: 2 }}>
         Play Again
       </Button>
     </Box>
-        )
-      }
+  )}
     </Box>
   )
 }

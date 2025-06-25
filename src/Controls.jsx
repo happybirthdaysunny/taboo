@@ -4,7 +4,7 @@ import { Box, Button } from '@mui/material';
 
 const Controls = ({ onNext, onShuffle }) => {
   return (
-    <Box display="flex" justifyContent="center" gap={2} mt={2}>
+    <Box display="flex" justifyContent="space-between" >
       <Button
         variant="outlined"
         color="secondary"

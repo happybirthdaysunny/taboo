@@ -1,12 +1,12 @@
 // ScoreBoard.tsx
 // import React from 'react';
-import { Box, Typography, Paper } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const ScoreBoard = ({ score, timer }) => {
   const timerColor = timer <= 10 ? 'error.main' : 'primary.main';
 
   return (
-    <Paper elevation={3} sx={{ p: 2, display: 'flex', justifyContent: 'space-around', mb: 3 }}>
+    <Box sx={{  display: 'flex', justifyContent: 'space-around', marginBottom: "16px" }}>
       <Box textAlign="center">
         <Typography variant="subtitle1">Score</Typography>
         <Typography variant="h4">{score}</Typography>
@@ -17,7 +17,7 @@ const ScoreBoard = ({ score, timer }) => {
           {timer}s
         </Typography>
       </Box>
-    </Paper>
+    </Box>
   );
 };
 
