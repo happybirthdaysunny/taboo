@@ -1,4 +1,5 @@
 import { Box } from '@mui/material';
+import { pxToRemConverter } from './utils/numericHelpers';
 
 export const Marquee = () => {
   return (
@@ -6,6 +7,8 @@ export const Marquee = () => {
   sx={{
     overflow: 'hidden',
     whiteSpace: 'nowrap',
+    backgroundColor: "#000",
+    padding: pxToRemConverter(8),
     width: '100%',
     '& span': {
       display: 'inline-block',

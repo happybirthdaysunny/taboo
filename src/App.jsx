@@ -8,6 +8,7 @@ import ScoreBoard from './ScoreBoard';
 import Controls from "./Controls";
 import { PrimaryButton } from "./PrimaryButton";
 import { Marquee } from "./Marquee";
+// import { pxToRemConverter } from './utils/numericHelpers';
 
 function App() {
   const [cards, setCards] = useState(cardBank);
@@ -68,13 +69,14 @@ const handleShuffle = () => {
 };
 
   return (
-    <Box sx={{ minHeight: '100vh',color: "#ffffff", fontFamily: "Poppins, sans-serif",
+    <Box sx={{ color: "#ffffff", fontFamily: "Poppins, sans-serif",
       display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
      }}>
       <Marquee />
-      <Box component="img" src={tabooLogo} alt="Logo" sx={{ height: 150 }} />
+      <Box >
+         <Box component="img" src={tabooLogo} alt="Logo" sx={{ height: 150 }} />
 
        {!hasStarted ? (
     <Box textAlign="center" mt={4}>
@@ -114,6 +116,9 @@ const handleShuffle = () => {
       <PrimaryButton variant="contained" onClick={handleShuffle} sx={{ mt: 2 }} label={"Play Again"} />
     </Box>
   )}
+
+      </Box>
+
     </Box>
   )
 }
