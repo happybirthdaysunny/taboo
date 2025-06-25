@@ -13,9 +13,9 @@ export const GameCard = ({ card }) => {
 
   return (
     <Card sx={{ width: "300px", height: "370px", borderRadius: "24px", background: `linear-gradient(180deg, ${backgroundColors[difficulty][0]}, ${backgroundColors[difficulty][1]})`, padding: "32px 24px", display: "flex", flexDirection: "column", margin: `${pxToRemConverter(32)} 0`  }}>
-      <CardContent sx={{ display: "flex", flexDirection: "column", flexGrow: 1, padding: 0}}>
+      <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center", flexGrow: 1, padding: 0}}>
         <Typography variant="h4" sx={{fontSize: "28px", fontFamily: "Archivo, sans-serif", fontWeight: 900, marginBottom: "24px", marginTop: "12px" }}>{guessWord.toUpperCase()}</Typography>
-        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "24px", backgroundColor: "#ffffff", height: "100%", padding: 0}}>
+        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "24px", backgroundColor: "#ffffff", height: "100%", padding: 0, width: "100%"}}>
           <List>
           {tabooWords.map((word, i) => (
             <ListItem key={i} sx={{justifyContent: "center", textAlign: "center"}}>

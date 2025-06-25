@@ -68,7 +68,11 @@ const handleShuffle = () => {
 };
 
   return (
-    <Box sx={{padding: 16, color: "#ffffff", fontFamily: "Poppins, sans-serif" }}>
+    <Box sx={{ minHeight: '100vh',color: "#ffffff", fontFamily: "Poppins, sans-serif",
+      display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
+     }}>
       <Marquee />
       <Box component="img" src={tabooLogo} alt="Logo" sx={{ height: 150 }} />
 
