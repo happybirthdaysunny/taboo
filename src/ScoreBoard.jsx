@@ -9,15 +9,15 @@ const ScoreBoard = ({ score, timer, index }) => {
     <Box sx={{  display: 'flex', justifyContent: 'space-around' }}>
             <Box textAlign="center">
          <Typography variant="subtitle1" sx={{ fontFamily: "Poppins, sans-serif"}}>Card</Typography>
-        <Typography variant="h4" sx={{ fontFamily: "Poppins, sans-serif"}}>{index}/32</Typography>
+        <Typography variant="h4" sx={{ fontFamily: "Archivo, sans-serif"}}>{index}/32</Typography>
       </Box>
       <Box textAlign="center">
         <Typography variant="subtitle1" sx={{ fontFamily: "Poppins, sans-serif"}}>Score</Typography>
-        <Typography variant="h4" sx={{ fontFamily: "Poppins, sans-serif"}}>{score}</Typography>
+        <Typography variant="h4" sx={{ fontFamily: "Archivo, sans-serif"}}>{score}</Typography>
       </Box>
       <Box textAlign="center">
         <Typography variant="subtitle1" sx={{ fontFamily: "Poppins, sans-serif"}}>Time Left</Typography>
-        <Typography variant="h4" sx={{ fontFamily: "Poppins, sans-serif",color: timerColor }}>
+        <Typography variant="h4" sx={{ fontFamily: "Archivo, sans-serif",color: timerColor }}>
           {timer}s
         </Typography>
       </Box>
