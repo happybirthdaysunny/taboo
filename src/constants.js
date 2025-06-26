@@ -75,8 +75,8 @@ export const cardBank = [
     difficulty: 1
   },
     {
-    guessWord: "Ski Trip", // maybe something adjacent?
-    tabooWords: ["Slopes", "Chalet", "Lift", "Lodge"], // mountain, snow, einter,
+    guessWord: "Ski Trip",
+    tabooWords: ["Slopes", "Chalet", "Winter", "Snow", "Mountain"],
     difficulty: 1
   },
   {
@@ -96,7 +96,7 @@ export const cardBank = [
   },
   {
     guessWord: "Crocs",
-    tabooWords: ["Sandals", "Holes", "Slip-on", "Sport", "Jibbitz"], // to do
+    tabooWords: ["Sandals", "Holes", "Slip-on", "Sport", "Jibbitz"],
     difficulty: 1
   },
   {
@@ -106,7 +106,7 @@ export const cardBank = [
   },
   {
     guessWord: "Fresh Roll",
-    tabooWords: [], // to do
+    tabooWords: ["Rice paper", "Shrimp", "Vietnamese", "Spring", "Summer"],
     difficulty: 1
   },
   {
@@ -120,7 +120,7 @@ export const cardBank = [
     difficulty: 2
   },
   {
-    guessWord: "Appa", // to do
+    guessWord: "Appa",
     tabooWords: ["Bison", "Flying", "Avatar", "Aang", "Sky"],
     difficulty: 2
   },
@@ -130,33 +130,33 @@ export const cardBank = [
     difficulty: 2
   },
   {
-    guessWord: "Diet Coke", //
+    guessWord: "Diet Coke",
     tabooWords: ["Soda", "Cola", "Zero", "Sweetener", "Drink"],
     difficulty: 3
   },
     {
     guessWord: "Hike",
-    tabooWords: ["Trail", "Walk", "Nature", "Climb", "Boots"], // hitch?
+    tabooWords: ["Trail", "Walk", "Nature", "Climb", "Hitch"],
     difficulty: 3
   },
   {
-    guessWord: "Potato Masher",
-    tabooWords: [],
+    guessWord: "Waitress",
+    tabooWords: ["Restaurant", "Table", "Serve", "Order", "Food"],
     difficulty: 3
   },
   {
-    guessWord: "",
-    tabooWords: [],
-    difficulty: 4
+    guessWord: "Oyster",
+    tabooWords: ["Shell", "Pearl", "Clam", "Shuck", "Seafood"],
+    difficulty: 3
   },
     {
-    guessWord: "",
-    tabooWords: [],
-    difficulty: 4
+    guessWord: "Magic Trick",
+    tabooWords: ["Illusion", "Rabbit", "Hat", "Disappear", "Card"],
+    difficulty: 3
   },
   {
-    guessWord: "",
-    tabooWords: [],
-    difficulty: 4
+    guessWord: "Wrestling",
+    tabooWords: ["Ring", "Fight", "WWE", "Match", "Slam"],
+    difficulty: 3
   },
 ];
