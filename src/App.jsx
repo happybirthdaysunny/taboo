@@ -16,7 +16,7 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [timer, setTimer] = useState(60);
   const [score, setScore] = useState(0);
-  const [isRunning, setIsRunning] = useState(true);
+  const [isRunning, setIsRunning] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
 
   useEffect(() => {
@@ -36,7 +36,14 @@ function App() {
 }, [isRunning]);
 
 const handleStart = () => {
+  const shuffled = [...cardBank].sort(() => Math.random() - 0.5);
+  setCards(shuffled);
+  setCurrentIndex(0);
+  setScore(0);
+  setTimer(60);
+
   setHasStarted(true);
+  setIsRunning(true);
 };
 
 const handleNext = () => {
