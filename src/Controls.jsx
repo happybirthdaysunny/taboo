@@ -8,7 +8,7 @@ const Controls = ({ onNext, onShuffle }) => {
         variant="outlined"
         color="secondary"
         onClick={onShuffle}
-        label="Shuffle"
+        label="Reset"
       />
       <PrimaryButton
         variant="contained"

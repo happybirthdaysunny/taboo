@@ -99,17 +99,20 @@ const handleShuffle = () => {
   />
 </Box>
        {!hasStarted ? (
-    <Box textAlign="center" mt={5}>
-      <Typography variant="h4" gutterBottom sx={{ fontFamily: "Archivo, sans-serif"}}>
+    <Box textAlign="center">
+      <Box sx={{ marginBottom: pxToRemConverter(16)}}>
+              <Typography variant="h4" gutterBottom sx={{ fontFamily: "Archivo, sans-serif"}}>
         WELCOME
       </Typography>
       <Typography variant="body1" gutterBottom sx={{ fontFamily: "Poppins, sans-serif"}}>
         Get through all 32 cards before time runs out!
       </Typography>
+        </Box>
+
       <PrimaryButton
         variant="contained"
         onClick={handleStart}
-        sx={{ mt: 2 }}
+        sx={{ marginTop: pxToRemConverter(16) }}
         label={"Play"}
         buttonColor={"#fff7ad"}
       />
@@ -132,9 +135,9 @@ const handleShuffle = () => {
     </Box>
   ) : (
     <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", gap: 1}} mt={4} >
-      <Typography variant="h4" sx={{ fontFamily: "Poppins, sans-serif"}}>🎉 Happy Birthday Sunny! 🎉</Typography>
-      <Box sx={{display: "flex", flexDirection: "row", gap: 2, alignItems: "center"}}>
-        <Typography variant="h6" sx={{ fontFamily: "Poppins, sans-serif"}}>{`Your final score:`}</Typography><Typography variant="h4" sx={{ fontFamily: "Archivo, sans-serif"}}>{score}</Typography>
+      <Typography variant="h4" sx={{ fontFamily: "Archivo, sans-serif"}}>🎉 HAPPY BIRTHDAY SUNNY! 🎉</Typography>
+      <Box sx={{display: "flex", flexDirection: "row", gap: 1, alignItems: "center"}}>
+        <Typography  sx={{ fontFamily: "Poppins, sans-serif"}}>{`Your final score:`}</Typography><Typography variant="h6" sx={{ fontFamily: "Archivo, sans-serif"}}>{score}/32</Typography>
         </Box>
       <PrimaryButton variant="contained" onClick={handleShuffle} sx={{ mt: 2 }} label={"Play Again"} buttonColor={"#fff7ad"} />
     </Box>
