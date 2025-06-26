@@ -2,32 +2,32 @@ export const cardBank = [
   {
     guessWord: "Black Panther",
     tabooWords: ["Marvel", "Wakanda", "Cat", "Jungle", "Leopard"],
-    difficulty: 1
+    difficulty: 2
   },
   {
     guessWord: "Charcuterie",
     tabooWords: ["Meat", "Cheese", "Board", "Prosciutto", "Crackers"],
-    difficulty: 1
+    difficulty: 2
   },
   {
     guessWord: "Eggs Benedict",
     tabooWords: ["Breakfast", "Hollandaise", "Muffin", "Brunch", "Poached"],
-    difficulty: 1
+    difficulty: 3
   },
   {
     guessWord: "Groundhog Day",
     tabooWords: ["Shadow", "Spring", "Winter", "Punxsutawney Phil", "February"],
-    difficulty: 1
+    difficulty: 4
   },
   {
     guessWord: "Wayne Gretzky",
     tabooWords: ["Hockey", "Oilers", "99", "Canada", "NHL"],
-    difficulty: 1
+    difficulty: 4
   },
   {
     guessWord: "Geek",
     tabooWords: ["Nerd", "Smart", "Glasses", "School", "Study"],
-    difficulty: 1
+    difficulty: 3
   },
   {
     guessWord: "Cookie",
@@ -37,12 +37,12 @@ export const cardBank = [
   {
     guessWord: "Poutine",
     tabooWords: ["Fries", "Gravy", "Cheese", "Quebec", "Curds"],
-    difficulty: 1
+    difficulty: 2
   },
   {
     guessWord: "Lobster",
     tabooWords: ["Seafood", "Claws", "Crustacean", "Red", "Shellfish"],
-    difficulty: 1
+    difficulty: 2
   },
     {
     guessWord: "Chicken Noodle Soup",
@@ -52,12 +52,12 @@ export const cardBank = [
   {
     guessWord: "Artificial Intelligence (AI)",
     tabooWords: ["Robot", "Chat", "Machine", "Learning", "Computer"],
-    difficulty: 1
+    difficulty: 3
   },
   {
     guessWord: "Serendipity",
     tabooWords: ["Luck", "Fate", "Coincidence", "Chance", "Accident"],
-    difficulty: 1
+    difficulty: 3
   },
   {
     guessWord: "Birthday",
@@ -67,7 +67,7 @@ export const cardBank = [
   {
     guessWord: "Sangria",
     tabooWords: ["Wine", "Fruit", "Drink", "Alcohol", "Pitcher"],
-    difficulty: 1
+    difficulty: 3
   },
   {
     guessWord: "Cowboy",
@@ -82,7 +82,7 @@ export const cardBank = [
   {
     guessWord: "Sticker",
     tabooWords: ["Peel", "Stick", "Adhesive", "Decorate", "Sheet"],
-    difficulty: 1
+    difficulty: 2
   },
   {
     guessWord: "Golf",
@@ -97,17 +97,17 @@ export const cardBank = [
   {
     guessWord: "Crocs",
     tabooWords: ["Sandals", "Holes", "Slip-on", "Sport", "Jibbitz"],
-    difficulty: 1
+    difficulty: 2
   },
   {
     guessWord: "Sweet Potato",
     tabooWords: ["Root", "Fries", "Orange", "Thanksgiving", "Mash"],
-    difficulty: 1
+    difficulty: 2
   },
   {
     guessWord: "Fresh Roll",
     tabooWords: ["Rice paper", "Shrimp", "Vietnamese", "Spring", "Summer"],
-    difficulty: 1
+    difficulty: 2
   },
   {
     guessWord: "Bowling",
@@ -117,22 +117,22 @@ export const cardBank = [
   {
     guessWord: "Livid",
     tabooWords: ["Angry", "Furious", "Rage", "Temper", "Mad"],
-    difficulty: 2
+    difficulty: 4
   },
   {
     guessWord: "Appa",
     tabooWords: ["Bison", "Flying", "Avatar", "Aang", "Sky"],
-    difficulty: 2
+    difficulty: 4
   },
   {
     guessWord: "Noggin",
     tabooWords: ["Head", "Brain", "Skull", "Think", "Cranium"],
-    difficulty: 2
+    difficulty: 4
   },
   {
     guessWord: "Diet Coke",
     tabooWords: ["Soda", "Cola", "Zero", "Sweetener", "Drink"],
-    difficulty: 3
+    difficulty: 4
   },
     {
     guessWord: "Hike",
@@ -147,7 +147,7 @@ export const cardBank = [
   {
     guessWord: "Oyster",
     tabooWords: ["Shell", "Pearl", "Clam", "Shuck", "Seafood"],
-    difficulty: 3
+    difficulty: 4
   },
     {
     guessWord: "Magic Trick",
@@ -157,6 +157,6 @@ export const cardBank = [
   {
     guessWord: "Wrestling",
     tabooWords: ["Ring", "Fight", "WWE", "Match", "Slam"],
-    difficulty: 3
+    difficulty: 4
   },
 ];
